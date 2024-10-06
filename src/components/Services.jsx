@@ -39,7 +39,7 @@ const Services = () => {
       </View>
 
       {RecentSearchData.map((item) => (
-        <ServiceCard item={item} />
+        <ServiceCard item={item} key={item.id} />
       ))}
     </ScrollView>
   );

@@ -7,7 +7,7 @@ const Carousel = () => {
     <View style={styles.carouselContainer}>
       <Swiper showsPagination={false} style={styles.wrapper} autoplay={true}>
         {CarouselData.map((item) => (
-          <View>
+          <View key={item.id}>
             <Image source={item.image} style={styles.imgStyle} />
           </View>
         ))}

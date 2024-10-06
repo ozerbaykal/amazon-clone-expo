@@ -19,6 +19,7 @@ const Categories = () => {
     >
       {Category.map((item) => (
         <TouchableOpacity
+          key={item.id}
           onPress={() => navigation.navigate("ProductScreen")}
           style={styles.category}
         >
